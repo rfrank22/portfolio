@@ -2,7 +2,7 @@ body {
   background-color:lightblue;
  }
  
- h1,h2{
+ h1,h3{
   text-align:center;
  }
  
@@ -10,7 +10,7 @@ body {
   text_align: left;
 }
 
-h2 {
+h3 {
   color:#FF0040;
 }
 
