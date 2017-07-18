@@ -8,6 +8,8 @@ body {
  
  p {
   text_align: left;
+  color: white;
+  font-family: helvettica;
 }
 
 h3 {
