@@ -2,14 +2,14 @@ body {
   background-color:lightblue;
  }
  
- h1,h3{
+ h1,h2{
   text-align:center;
  }
  
- h2,p {
+ p {
   text_align: left;
 }
 
-h3 {
+h2 {
   color:#FF0040
 }
