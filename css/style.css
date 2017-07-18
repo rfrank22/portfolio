@@ -13,3 +13,8 @@ body {
 h2 {
   color:#FF0040;
 }
+
+img {
+  display: block;
+  margin: auto;
+}
