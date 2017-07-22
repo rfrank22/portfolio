@@ -1,5 +1,5 @@
 body {
-  background-color: (200,200,200);
+  background-color: (150,150,150);
  }
  
  h1,h3{
@@ -9,7 +9,7 @@ body {
  
  p {
   text_align: left;
-  font-family: helvettica;
+  font-family: Times New Roman;
 }
 
 img {
