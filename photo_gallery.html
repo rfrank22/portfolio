@@ -27,56 +27,52 @@
 
 <body>
 
-<div class="w3-container">
-  <h2>Photo Gallery</h2>
-</div>
-
 <div class="w3-row-padding">
   <div class="w3-col s3 w3-container">
   <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Nature');">
-    <img src="truck.jpg" alt="Truck" style="width:200px;height:200px;">
+    <img src="truck.jpg" alt="truck" style="width:200px;height:200px;">
   </a>
   </div>
   <div class="w3-col s3 w3-container">
     <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Fjords');">
-      <img src="jordan.jpg" alt="Jordan" style="width:200px;height:200px;">
+      <img src="jordan.jpg" alt="jordan" style="width:200px;height:200px;">
     </a>
   </div>
   <div class="w3-col s3 w3-container">
     <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Mountains');">
-      <img src="plane.jpg" alt="Mountains" style="width:200px;height:200px;">
+      <img src="plane.jpg" alt="plane" style="width:200px;height:200px;">
     </a>
   </div>
   <div class="w3-col s3 w3-container">
     <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Lights');">
-      <img src="img_lights.jpg" alt="Lights" style="width:200px;height:200px;">
+      <img src="shadow.jpg" alt="shadow" style="width:200px;height:200px;">
     </a>
   </div>
 </div><br>
 
-<div id="Nature" class="picture w3-display-container" style="display:none">
-  <img src="img_nature_wide.jpg" alt="Nature" style="width:100%">
+<div id="truck" class="picture w3-display-container" style="display:none">
+  <img src="truck.jpg" alt="Nature" style="width:100%">
   <span onclick="this.parentElement.style.display='none'" 
   class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
-  <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Nature</div>
+  <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Truck</div>
 </div>
 
-<div id="Fjords" class="picture w3-display-container" style="display:none">
-  <img src="img_fjords_wide.jpg" alt="Fjords" style="width:100%">
+<div id="jordan" class="picture w3-display-container" style="display:none">
+  <img src="jordan.jpg" alt="Fjords" style="width:100%">
   <span onclick="this.parentElement.style.display='none'" 
   class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
-  <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Fjords</div>
+  <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">jordan</div>
 </div>
 
-<div id="Mountains" class="picture w3-display-container" style="display:none">
-  <img src="img_mountains_wide.jpg" alt="Mountains" style="width:100%">
+<div id="plane" class="picture w3-display-container" style="display:none">
+  <img src="plane.jpg" alt="Mountains" style="width:100%">
   <span onclick="this.parentElement.style.display='none'" 
   class="w3-display-topright w3-button w3-transparent">&times;</span>
   <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Mountains</div>
 </div>
 
 <div id="Lights" class="picture w3-display-container" style="display:none">
-  <img src="img_lights_wide.jpg" alt="Lights" style="width:100%">
+  <img src="shadow.jpg" alt="Lights" style="width:100%">
   <span onclick="this.parentElement.style.display='none'" 
   class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
   <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Northern Lights</div>
