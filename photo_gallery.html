@@ -24,103 +24,77 @@
     no idea how to look at a photograph. My whole life I had been told that these types of photographs were
    </p> 
 </body>
-<head>
-<style>
-  
-  
-div.gallery {
-    margin: 5px;
-    float: left;
-    width: 180px;
-}
 
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
-</style>
-</head>
 <body>
 
-<div class="gallery">
-  <a target="_blank" href="plane.jpg">
-    <img src="plane.jpg" alt="plane" style="width:400px;height:400px;">
-  </a>
+<div class="w3-container">
+  <h2>Photo Gallery</h2>
 </div>
 
-<div class="gallery">
-  <a target="_blank"mom.jpg">
-    <img src="mom.jpg" alt="mom" style="width:400px;height:400px;">
+<div class="w3-row-padding">
+  <div class="w3-col s3 w3-container">
+  <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Nature');">
+    <img src="truck.jpg" alt="Truck" style="width:200px;height:200px;">
   </a>
+  </div>
+  <div class="w3-col s3 w3-container">
+    <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Fjords');">
+      <img src="jordan.jpg" alt="Jordan" style="width:200px;height:200px;">
+    </a>
+  </div>
+  <div class="w3-col s3 w3-container">
+    <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Mountains');">
+      <img src="plane.jpg" alt="Mountains" style="width:200px;height:200px;">
+    </a>
+  </div>
+  <div class="w3-col s3 w3-container">
+    <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Lights');">
+      <img src="img_lights.jpg" alt="Lights" style="width:200px;height:200px;">
+    </a>
+  </div>
+</div><br>
+
+<div id="Nature" class="picture w3-display-container" style="display:none">
+  <img src="img_nature_wide.jpg" alt="Nature" style="width:100%">
+  <span onclick="this.parentElement.style.display='none'" 
+  class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+  <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Nature</div>
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="truck.jpg">
-    <img src="truck.jpg" alt="truck" style="width:400px;height:400px;">
-  </a>
+<div id="Fjords" class="picture w3-display-container" style="display:none">
+  <img src="img_fjords_wide.jpg" alt="Fjords" style="width:100%">
+  <span onclick="this.parentElement.style.display='none'" 
+  class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+  <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Fjords</div>
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="lamp.jpg">
-    <img src="lamp.jpg" alt="lamp" style="width:400px;height:400px;">
-  </a>
+<div id="Mountains" class="picture w3-display-container" style="display:none">
+  <img src="img_mountains_wide.jpg" alt="Mountains" style="width:100%">
+  <span onclick="this.parentElement.style.display='none'" 
+  class="w3-display-topright w3-button w3-transparent">&times;</span>
+  <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Mountains</div>
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="colors.jpg">
-    <img src="colors.jpg" alt="colors" style="width:400px;height:400px;">
-  </a>
+<div id="Lights" class="picture w3-display-container" style="display:none">
+  <img src="img_lights_wide.jpg" alt="Lights" style="width:100%">
+  <span onclick="this.parentElement.style.display='none'" 
+  class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+  <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Northern Lights</div>
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="jordan.jpg">
-    <img src="jordan.jpg" alt="jordan" style="width:400px;height:400px;">
-  </a>
-</div>
-                                                           
-<div class="gallery">
-  <a target="_blank" href="josh.jpg">
-    <img src="josh.jpg" alt="josh" style="width:400px;height:400px;">
-  </a>
-</div>
-                                                           
-<div class="gallery">
-  <a target="_blank" href="emi.jpg">
-    <img src="emi.jpg" alt="emi" style="width:400px;height:400px;">
-  </a>
-</div>
-                                                         
-<div class="gallery">
-  <a target="_blank" href="shadow.jpg">
-    <img src="shadow.jpg" alt="shadow" style="width:400px;height:400px;">
-  </a>
-</div>        
-                                                               
-<div class="gallery">
-  <a target="_blank" href="sam1.jpg">
-    <img src="sam1.jpg" alt="sam1" style="width:400px;height:400px;">
-  </a>
-</div>
-                                                           
-<div class="gallery">
-  <a target="_blank" href="sam2.jpg">
-    <img src="sam2.jpg" alt="sam2" style="width:400px;height:400px;">
-  </a>
-</div>
-                                                           
-<div class="gallery">
-  <a target="_blank" href="sam3.jpg">
-    <img src="sam3.jpg" alt="sam3" style="width:400px;height:400px;">
-  </a>
-</div>
-                                                           
-<div class="gallery">
-  <a target="_blank" href="ladder.jpg">
-    <img src="ladder.jpg" alt="ladder" style="width:400px;height:400px;">
-  </a>
-</div>    
-                                                           
+<script>
+function openImg(imgName) {
+  var i, x;
+  x = document.getElementsByClassName("picture");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  document.getElementById(imgName).style.display = "block";
+}
+</script>
+
 </body>
-</body>
+  
+
 </html> 
 
